@@ -1,5 +1,7 @@
 import React from "react";
 
+// npm install, npm run build, npm start
+
 function App() {
   return (
     <div className="App">
@@ -73,7 +75,7 @@ function App() {
               <b>Count Urls / Bucket Size</b>
             </a>
             <a
-              href="#survivalshop"
+              href="#counturls"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -81,7 +83,7 @@ function App() {
               <b>Search single bucket url for keyword</b>
             </a>
             <a
-              href="#AvoidInfectionTips"
+              href="#singlebucket"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -89,7 +91,7 @@ function App() {
               <b>Regex Search</b>
             </a>
             <a
-              href="#contact"
+              href="#regexsearch"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -97,7 +99,7 @@ function App() {
               <b>Enumerate Buckets from keyword list</b>
             </a>
             <a
-              href="#contact"
+              href="#renumerate"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -105,7 +107,7 @@ function App() {
               <b>Search all buckets for keyword</b>
             </a>
             <a
-              href="#about"
+              href="#searchallbuckets"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -113,7 +115,7 @@ function App() {
               <b>search bug bounty programs for company</b>
             </a>
             <a
-              href="#contact"
+              href="#searchbugbounty"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding"
             >
