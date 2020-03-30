@@ -1,24 +1,380 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      Hello World !
+      <div>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CLOUD PILLAGER</title>
+        {/* BODY BODY BODY BODY BODY +++++++++++++++++++++++++++++++ */}
+        <title>TITLE 1 &lt;i class="fas fa-biohazard"&gt;&lt;/i&gt;</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              '\n        body,\n        h1,\n        h2,\n        h3,\n        h4,\n        h5,\n        h6 {\n          font-family: "Raleway", sans-serif;\n        }\n      '
+          }}
+        />
+        {/* Sidebar/menu--------------------------------Sidebar/menu--------- */}
+        <nav
+          className="w3-sidebar w3-collapse w3-white w3-animate-left"
+          style={{ zIndex: 3, width: "300px" }}
+          id="mySidebar"
         >
-          Learn React
-        </a>
-      </header>
+          <br />
+          <div className="w3-container">
+            <a
+              href="#counturls"
+              onclick="w3_close()"
+              className="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+              title="close menu"
+            >
+              <i className="fa fa-remove" />
+            </a>
+            {/* TOP LEFT IMAGE ON BAR*/}
+            <img
+              src={require("./images/Secure_Cloud_logo.png")}
+              style={{ width: "45%" }}
+              className="w3-round"
+            />
+            <br />
+            <br />
+
+            <h2>
+              <b>
+                AWS SCANNER
+                <i className="fa fa-superpowers" style={{ color: "teal" }} />
+              </b>
+            </h2>
+            <p className="w3-text-grey">Choose a search type</p>
+          </div>
+          <div className="w3-bar-block">
+            <a
+              href="#headerz"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding w3-text-teal"
+            >
+              <i className="fa fa-th-large fa-fw w3-margin-right" />
+              <b>Count Urls / Bucket Size</b>
+            </a>
+            <a
+              href="#survivalshop"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding w3-text-teal"
+            >
+              <i className="fa fa-th-large fa-fw w3-margin-right" />
+              <b>Search single bucket url for keyword</b>
+            </a>
+            <a
+              href="#AvoidInfectionTips"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding w3-text-teal"
+            >
+              <i className="fa fa-th-large fa-fw w3-margin-right" />
+              <b>Regex Search</b>
+            </a>
+            <a
+              href="#contact"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding w3-text-teal"
+            >
+              <i className="fa fa-th-large fa-fw w3-margin-right" />
+              <b>Enumerate Buckets from keyword list</b>
+            </a>
+            <a
+              href="#contact"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding w3-text-teal"
+            >
+              <i className="fa fa-th-large fa-fw w3-margin-right" />
+              <b>Search all buckets for keyword</b>
+            </a>
+            <a
+              href="#about"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding w3-text-teal"
+            >
+              <i className="fa fa-th-large fa-fw w3-margin-right" />
+              <b>search bug bounty programs for company</b>
+            </a>
+            <a
+              href="#contact"
+              onclick="w3_close()"
+              className="w3-bar-item w3-button w3-padding"
+            >
+              <i
+                className="fa fa-exclamation-triangle fa-fw w3-margin-right"
+                style={{ color: "red" }}
+              />
+              Databreach news
+            </a>
+            <div className="w3-panel w3-large">
+              <p>
+                <marquee
+                  behavior="scroll"
+                  direction="left"
+                  style={{ color: "teal" }}
+                >
+                  <b>
+                    300,000 buckets; unrestricted searches; AI searches; regex
+                    content searches; keyword searches
+                  </b>
+                </marquee>
+              </p>
+              <i
+                className="fab fa-facebook w3-hover-opacity"
+                style={{ color: "blue" }}
+              />
+              <i className="fab fa-instagram w3-hover-opacity" />
+              <i className="fab fa-snapchat w3-hover-opacity" />
+              <i className="fab fa-pinterest w3-hover-opacity" />
+              <i
+                className="fab fa-twitter w3-hover-opacity"
+                style={{ color: "lightblue" }}
+              />
+              <i className="fab fa-linkedin w3-hover-opacity" />
+            </div>
+          </div>
+        </nav>
+        {/* END OF SIDEBAR HERE, END OF SIDEBAR HERE---- ---- ---- ---- ---- --- --- --- */}
+        {/* Overlay effect when opening sidebar on small screens */}
+        <div
+          className="w3-overlay w3-hide-large w3-animate-opacity"
+          onclick="w3_close()"
+          style={{ cursor: "pointer" }}
+          title="close side menu"
+          id="myOverlay"
+        />
+        {/* !PAGE CONTENT! */}
+        <div className="w3-main" style={{ marginLeft: "300px" }}>
+          {/* Header BAR AT TOP OF PAGE. */}
+          <header id="headerz">
+            <a href="#">
+              <img
+                src={require("./images/Secure_Cloud_logo.png")}
+                style={{ width: "65px" }}
+                className="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"
+              />
+            </a>
+            <span
+              className="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
+              onclick="w3_open()"
+            >
+              <i className="fa fa-bars" />
+            </span>
+            <div className="w3-container">
+              <h1>
+                <b>WELCOME TO CLOUD PILLAGER</b>
+              </h1>
+              <img
+                src={require("./images/Secure_Cloud_logo.png")}
+                style={{ width: "10%" }}
+                className="w3-round"
+              />
+              <img
+                src={require("./images/Secure_Cloud_logo.png")}
+                style={{ width: "10%" }}
+                className="w3-round"
+              />
+              <div className="w3-section w3-bottombar w3-padding-16">
+                {/* <span class="w3-margin-right">Filter:</span> */}
+                <button className="w3-button w3-black">About this site</button>
+                <button className="w3-button w3-yellow">
+                  <i
+                    className="fas fa-cash-register w3-margin-right"
+                    style={{ color: "green" }}
+                  />
+                  Pricing
+                </button>
+                <button className="w3-button w3-teal w3-border  w3-hide-small">
+                  <i className="fas fa-dragon w3-margin-right" />
+                  Log in
+                </button>
+                <button className="w3-button w3-green w3-hide-small">
+                  <i className="fas fa-heart w3-margin-right" /> ethical
+                  disclosure practice
+                </button>
+              </div>
+            </div>
+          </header>
+          {/* FIRST VIDEO Grid*/}
+          <div className="w3-row-padding">
+            <div className="w3-third w3-container w3-margin-bottom">
+              <img src={require("./images/SearchB.png")} />
+              <div className="w3-container w3-white">
+                <p>
+                  <b>Enter a bucket address</b>
+                </p>
+                <p>Count the number of files, sizes and types</p>
+              </div>
+            </div>
+            <div className="w3-third w3-container w3-margin-bottom">
+              <img src={require("./images/SearchB.png")} />
+              <div className="w3-container w3-white">
+                <p>
+                  <b>Enter a bucket address</b>
+                </p>
+                <p>Count the number of files, sizes and types</p>
+              </div>
+            </div>
+            <div className="w3-third w3-container w3-margin-bottom">
+              <img src={require("./images/SearchB.png")} />
+              <div className="w3-container w3-white">
+                <p>
+                  <b>Enter a bucket address</b>
+                </p>
+                <p>Count the number of files, sizes and types</p>
+              </div>
+            </div>
+          </div>
+          {/* Second Photo Grid*/}
+          <div className="w3-row-padding">
+            <div className="w3-third w3-container w3-margin-bottom">
+              <img src={require("./images/SearchB.png")} />
+              <div className="w3-container w3-white">
+                <p>
+                  <b>Enter a bucket address</b>
+                </p>
+                <p>Count the number of files, sizes and types</p>
+              </div>
+            </div>
+            <div className="w3-third w3-container w3-margin-bottom">
+              <img src={require("./images/SearchB.png")} />
+              <div className="w3-container w3-white">
+                <p>
+                  <b>Enter a bucket address</b>
+                </p>
+                <p>Count the number of files, sizes and types</p>
+              </div>
+            </div>
+            <div className="w3-third w3-container w3-margin-bottom">
+              <img src={require("./images/SearchB.png")} />
+              <div className="w3-container w3-white">
+                <p>
+                  <b>Enter a bucket address</b>
+                </p>
+                <p>Count the number of files, sizes and types</p>
+              </div>
+            </div>
+          </div>
+          {/* Footer THANKS TO THE W3.CSS Template*/}
+          <footer className="w3-container w3-padding-32 w3-dark-grey">
+            <div className="w3-row-padding">
+              <div className="w3-third" style={{ color: "sandybrown" }}>
+                <h3>
+                  <i className="fas fa-video" /> CONTACT
+                </h3>
+                <p>DONT GET CAUGHT WITH YOUR PANTS DOWN</p>
+                <p>XXX</p>
+                <p>pantsdown@cloudpillager.com</p>
+                {/* <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> */}
+              </div>
+              <div className="w3-third">
+                <h3>
+                  <i className="fas fa-globe-asia" /> Maps and Data
+                </h3>
+                <ul className="w3-ul w3-hoverable">
+                  <li className="w3-padding-16">
+                    <img
+                      src="/w3images/workshop.jpg"
+                      className="w3-left w3-margin-right"
+                      style={{ width: "50px" }}
+                    />
+                    <span className="w3-large">Global Leaks Map</span>
+                    <br />
+                    <span>hi hi hi hi hi hi</span>
+                  </li>
+                  <li className="w3-padding-16">
+                    <img
+                      src="/w3images/gondol.jpg"
+                      className="w3-left w3-margin-right"
+                      style={{ width: "50px" }}
+                    />
+                    <span className="w3-large"> bye bye bye bye</span>
+                    <br />
+                    <span>placeholder</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="w3-third">
+                <h3>
+                  <i className="fas fa-skull-crossbones" /> Popular tags
+                </h3>
+                <p>
+                  <span className="w3-tag w3-black w3-margin-bottom">
+                    hacking
+                  </span>
+                  <span className="w3-tag w3-yellow w3-small w3-margin-bottom">
+                    amazon aws
+                  </span>
+                  <span className="w3-tag w3-grey w3-small w3-margin-bottom">
+                    cloud
+                  </span>
+                  <span className="w3-tag w3-border w3-small w3-margin-bottom">
+                    data leak
+                  </span>
+                  <span className="w3-tag w3-grey w3-small w3-margin-bottom">
+                    confidential data
+                  </span>
+                  <span className="w3-tag w3-grey w3-small w3-margin-bottom">
+                    Google Cloud Services
+                  </span>
+                  <span className="w3-tag w3-red w3-small w3-margin-bottom">
+                    Azure
+                  </span>
+                  <span className="w3-tag w3-text-light-grey w3-small w3-margin-bottom">
+                    Bug Bounty
+                  </span>
+                  <span className="w3-tag w3-blue w3-small w3-margin-bottom">
+                    Pentesting
+                  </span>
+                  <span className="w3-tag w3-green w3-small w3-margin-bottom">
+                    Heroku
+                  </span>
+                  <span className="w3-tag w3-grey w3-small w3-margin-bottom">
+                    Server
+                  </span>
+                  <span className="w3-tag w3-orange w3-small w3-margin-bottom">
+                    CLOUD
+                  </span>
+                  <span className="w3-tag w3-orange w3-small w3-margin-bottom">
+                    <b>Penetration Testing</b>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </footer>
+          <div className="w3-black w3-center w3-padding-24">
+            Go visit Amazon
+            <a
+              href="https://amazonaws.com"
+              title="AWS"
+              target="_blank"
+              className="w3-hover-opacity"
+            >
+              AWS
+            </a>
+          </div>
+          {/* End page content */}
+        </div>
+        {/* Code injected by live-server */}
+      </div>
+      ); } });
     </div>
   );
 }
