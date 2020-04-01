@@ -1,17 +1,16 @@
 import React from "react";
 
-// npm install, npm run build, npm start
+// (npm audit fix), npm install, npm run build, npm start
 
 function App() {
   return (
     <div className="App">
-      Hello World !
       <div>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CLOUD PILLAGER</title>
         {/* BODY BODY BODY BODY BODY +++++++++++++++++++++++++++++++ */}
-        <title>TITLE 1 &lt;i class="fas fa-biohazard"&gt;&lt;/i&gt;</title>
+        <title>.</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
@@ -46,12 +45,12 @@ function App() {
               className="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
               title="close menu"
             >
-              <i className="fa fa-remove" />
+              {/* <i className="fa fa-remove" /> */}
             </a>
             {/* TOP LEFT IMAGE ON BAR*/}
             <img
               src={require("./images/Secure_Cloud_logo.png")}
-              style={{ width: "45%" }}
+              style={{ width: "95%" }}
               className="w3-round"
             />
             <br />
@@ -138,7 +137,7 @@ function App() {
                   </b>
                 </marquee>
               </p>
-              <i
+              {/* <i
                 className="fab fa-facebook w3-hover-opacity"
                 style={{ color: "blue" }}
               />
@@ -149,7 +148,7 @@ function App() {
                 className="fab fa-twitter w3-hover-opacity"
                 style={{ color: "lightblue" }}
               />
-              <i className="fab fa-linkedin w3-hover-opacity" />
+              <i className="fab fa-linkedin w3-hover-opacity" /> */}
             </div>
           </div>
         </nav>
@@ -167,11 +166,11 @@ function App() {
           {/* Header BAR AT TOP OF PAGE. */}
           <header id="headerz">
             <a href="#">
-              <img
+              {/* <img
                 src={require("./images/Secure_Cloud_logo.png")}
                 style={{ width: "65px" }}
                 className="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"
-              />
+              /> */}
             </a>
             <span
               className="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
@@ -179,11 +178,11 @@ function App() {
             >
               <i className="fa fa-bars" />
             </span>
-            <div className="w3-container">
+            <div className="w3-container" style={{ color: "light-grey" }}>
               <h1>
                 <b>WELCOME TO CLOUD PILLAGER</b>
               </h1>
-              <img
+              {/* <img
                 src={require("./images/Secure_Cloud_logo.png")}
                 style={{ width: "10%" }}
                 className="w3-round"
@@ -192,7 +191,7 @@ function App() {
                 src={require("./images/Secure_Cloud_logo.png")}
                 style={{ width: "10%" }}
                 className="w3-round"
-              />
+              /> */}
               <div className="w3-section w3-bottombar w3-padding-16">
                 {/* <span class="w3-margin-right">Filter:</span> */}
                 <button className="w3-button w3-black">About this site</button>
@@ -208,19 +207,20 @@ function App() {
                   Log in
                 </button>
                 <button className="w3-button w3-green w3-hide-small">
-                  <i className="fas fa-heart w3-margin-right" /> ethical
-                  disclosure practice
+                  <i className=" w3-margin-right" /> ethical disclosure practice
                 </button>
               </div>
             </div>
           </header>
+          {/* --------------------------end of header bar ----------------------------------------------------- */}
+
           {/* FIRST VIDEO Grid*/}
           <div className="w3-row-padding">
             <div className="w3-third w3-container w3-margin-bottom">
               <img src={require("./images/SearchB.png")} />
               <div className="w3-container w3-white">
                 <p>
-                  <b>Enter a bucket address</b>
+                  <b>Enter a bucket address url </b>
                 </p>
                 <p>Count the number of files, sizes and types</p>
               </div>
@@ -229,18 +229,23 @@ function App() {
               <img src={require("./images/SearchB.png")} />
               <div className="w3-container w3-white">
                 <p>
-                  <b>Enter a bucket address</b>
+                  <b>Enter a url (or put ALL) and a keyword</b>
                 </p>
-                <p>Count the number of files, sizes and types</p>
+                <p>
+                  Find all files with this keyword, ALL only works for
+                  subscribers
+                </p>
               </div>
             </div>
             <div className="w3-third w3-container w3-margin-bottom">
               <img src={require("./images/SearchB.png")} />
               <div className="w3-container w3-white">
                 <p>
-                  <b>Enter a bucket address</b>
+                  <b>Enter a bucket url (or put ALL) and regex</b>
                 </p>
-                <p>Count the number of files, sizes and types</p>
+                <p>
+                  Find all files with this regex. ALL only works for subscribers
+                </p>
               </div>
             </div>
           </div>
@@ -250,9 +255,13 @@ function App() {
               <img src={require("./images/SearchB.png")} />
               <div className="w3-container w3-white">
                 <p>
-                  <b>Enter a bucket address</b>
+                  <b>Enumerate Buckets!</b>
                 </p>
-                <p>Count the number of files, sizes and types</p>
+                <p>
+                  link to your keyword or a url, and all those key words will be
+                  iterated and paired to test for xxx.amazonaws.com subdomains,
+                  which is where the buckets are located
+                </p>
               </div>
             </div>
             <div className="w3-third w3-container w3-margin-bottom">
