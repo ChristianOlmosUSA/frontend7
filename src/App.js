@@ -4,7 +4,24 @@ import React, {Component} from 'react';
 // (npm audit fix), npm install, npm run build, npm start
 
 class App extends Component {
-    
+    async postData() {                      // BOX 1
+         try {
+            let result = await fetch('https://webhook.site/f73f8817-30ff-46f6-bb82-157e06982f8e', {
+                method: 'post',
+                mode: 'no-cors',
+                header: {
+                    'Accept': 'application/json',
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({
+                    key1: 'myusername'
+                }),       
+            });
+        }   catch(e) {
+                console.log(e)
+        }
+    }
+
   render () {
       return (
     <div className="App">
@@ -219,9 +236,11 @@ class App extends Component {
 
           {/* FIRST VIDEO Grid*/}
           <div className="w3-row-padding">
-            <div className="w3-third w3-container w3-margin-bottom">
+            <div className="w3-third w3-container w3-margin-bottom w3-row-padding">  {/* BOX1 */}
             {/* <img src={require("./images/SearchB.png")} /> */}
              
+            <button onClick={ ()=> this.postData() }> Press to POST</button>    {/* BOX1 */}
+
               <div className="w3-container w3-white">
                 <p>
                   <b>Enter a bucket address url </b>
@@ -229,7 +248,7 @@ class App extends Component {
                 <p>Count the number of files, sizes and types</p>
               </div>
             </div>
-            <div className="w3-third w3-container w3-margin-bottom">
+            <div className="w3-third w3-container w3-margin-bottom">    {/* BOX2 */}
               <img src={require("./images/SearchB.png")} />
               <div className="w3-container w3-white">
                 <p>
@@ -241,7 +260,7 @@ class App extends Component {
                 </p>
               </div>
             </div>
-            <div className="w3-third w3-container w3-margin-bottom">
+            <div className="w3-third w3-container w3-margin-bottom">   {/* BOX3 */}
               <img src={require("./images/SearchB.png")} />
               <div className="w3-container w3-white">
                 <p>
