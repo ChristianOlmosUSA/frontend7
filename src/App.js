@@ -1,21 +1,24 @@
 import React, {Component} from 'react';
-
-
 // (npm audit fix), npm install, npm run build, npm start
 
 class App extends Component {
-    async postData() {                      // BOX 1
+    async postData() {                      // BOX 1, https://www.youtube.com/watch?v=8SkiIAbFbNs
          try {
-            let result = await fetch('https://webhook.site/f73f8817-30ff-46f6-bb82-157e06982f8e', {
+            let result = await fetch('https://3000-e4707477-13a7-4330-b97f-3bd525ee2232.ws-us02.gitpod.io/person', {
                 method: 'post',
-                mode: 'no-cors',
+             //   mode: 'no-cors',
                 header: {
-                    'Accept': 'application/json',
+             //       'Accept': 'application/json',
                     'Content-type': 'application/json'
                 },
                 body: JSON.stringify({
-                    key1: 'myusername'
-                }),       
+                                                                    //  "url": "mybucket1",
+                                                                    // "keyword": "userInput1",
+                                                                    // "id": "1",
+                    "username": "Mr Test 22",
+                    "email": "mrtest@gmail (22)",
+                    "password": "password - 22"
+                })
             });
         }   catch(e) {
                 console.log(e)
@@ -239,9 +242,17 @@ class App extends Component {
             <div className="w3-third w3-container w3-margin-bottom w3-row-padding">  {/* BOX1 */}
             {/* <img src={require("./images/SearchB.png")} /> */}
              
-            <button onClick={ ()=> this.postData() }> Press to POST</button>    {/* BOX1 */}
+            
 
               <div className="w3-container w3-white">
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+
+            
+
+              <button onClick={ ()=> this.postData() }> Press to POST</button>    {/* BOX1 */}
                 <p>
                   <b>Enter a bucket address url </b>
                 </p>

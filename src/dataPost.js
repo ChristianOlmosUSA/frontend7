@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+/* import React, {Component} from 'react';
 
 
 postData() {
@@ -10,7 +10,9 @@ postData() {
 <button onClick={()=> this.postData() }> Press to POST</button>
 
 
-</div>
+</div> 
+
+*/
 
 
 
