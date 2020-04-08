@@ -1,9 +1,12 @@
-import React from "react";
+import React, {Component} from 'react';
+
 
 // (npm audit fix), npm install, npm run build, npm start
 
-function App() {
-  return (
+class App extends Component {
+    
+  render () {
+      return (
     <div className="App">
       <div>
         <meta charSet="UTF-8" />
@@ -40,7 +43,7 @@ function App() {
           <br />
           <div className="w3-container">
             <a
-              href="#counturls"
+              href="#singleBucket"
               onclick="w3_close()"
               className="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
               title="close menu"
@@ -66,15 +69,15 @@ function App() {
           </div>
           <div className="w3-bar-block">
             <a
-              href="#headerz"
+              href="#countUrls"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
               <i className="fa fa-th-large fa-fw w3-margin-right" />
-              <b>Count Urls / Bucket Size</b>
+              <b>Count number of files / find total bucket size</b>
             </a>
             <a
-              href="#counturls"
+              href="#singleBucketSearch"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -82,7 +85,7 @@ function App() {
               <b>Search single bucket url for keyword</b>
             </a>
             <a
-              href="#singlebucket"
+              href="#regexSearch"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -90,7 +93,7 @@ function App() {
               <b>Regex Search</b>
             </a>
             <a
-              href="#regexsearch"
+              href="#enumerate"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -98,7 +101,7 @@ function App() {
               <b>Enumerate Buckets from keyword list</b>
             </a>
             <a
-              href="#renumerate"
+              href="#searchAll"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -106,7 +109,7 @@ function App() {
               <b>Search all buckets for keyword</b>
             </a>
             <a
-              href="#searchallbuckets"
+              href="#searchBB"
               onclick="w3_close()"
               className="w3-bar-item w3-button w3-padding w3-text-teal"
             >
@@ -137,7 +140,7 @@ function App() {
                   </b>
                 </marquee>
               </p>
-              {/* <i
+              {/* <i   WHen I converted from html to react the twitter links etc stop working, so ignored for now
                 className="fab fa-facebook w3-hover-opacity"
                 style={{ color: "blue" }}
               />
@@ -217,7 +220,8 @@ function App() {
           {/* FIRST VIDEO Grid*/}
           <div className="w3-row-padding">
             <div className="w3-third w3-container w3-margin-bottom">
-              <img src={require("./images/SearchB.png")} />
+            {/* <img src={require("./images/SearchB.png")} /> */}
+             
               <div className="w3-container w3-white">
                 <p>
                   <b>Enter a bucket address url </b>
@@ -388,6 +392,7 @@ function App() {
       ); } });
     </div>
   );
+  }     
 }
 
 export default App;
